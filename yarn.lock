@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@antv/async-hook@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@antv/async-hook/-/async-hook-2.1.0.tgz#17f57a6ae5e9c55adac3cdfac7d441258c3f9aeb"
+  integrity sha512-q7Rup5jTDAiWh77Xb2vgkCURJGczmU2iWTCkBDq28PuK5KUoenyeGGrFKAVkgqaL663wdpw0Vzn+sYriTfT9hA==
+  dependencies:
+    async "^3.1.1"
+
 "@antv/l7-component@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-component/download/@antv/l7-component-2.0.8.tgz?cache=0&sync_timestamp=1579600804992&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-component%2Fdownload%2F%40antv%2Fl7-component-2.0.8.tgz#a7ee26b9c81ee66b2d1aed5b146902901de90b26"
@@ -15,11 +22,12 @@
     load-styles "^2.0.0"
 
 "@antv/l7-core@^2.0.8":
-  version "2.0.7"
-  resolved "https://registry.npm.taobao.org/@antv/l7-core/download/@antv/l7-core-2.0.7.tgz#f9c938fe1ee9f4aa77ca7de23162e9c575171eab"
-  integrity sha1-+ck4/h7p9Kp3yn3iMWLpxXUXHqs=
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@antv/l7-core/-/l7-core-2.3.1.tgz#bfe28a9794899db63ae2d4ca4239990a0557f67b"
+  integrity sha512-Qc7TTnghNiDVFi3PXVm/jY59956bPuryz3hqrXmnv1+qrr3hYiZXWDm+bVkmQzhECKHysz8XdMo8qxTJks2FuQ==
   dependencies:
-    "@antv/l7-utils" "^2.0.7"
+    "@antv/async-hook" "^2.1.0"
+    "@antv/l7-utils" "2.3.1"
     "@babel/runtime" "^7.7.7"
     "@mapbox/tiny-sdf" "^1.1.1"
     ajv "^6.10.2"
@@ -33,7 +41,6 @@
     merge-json-schemas "^1.0.0"
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
-    tapable "^2.0.0-beta.8"
     viewport-mercator-project "^6.2.1"
 
 "@antv/l7-layers@^2.0.8":
@@ -121,7 +128,16 @@
     supercluster "^6.0.2"
     tapable "^2.0.0-beta.8"
 
-"@antv/l7-utils@^2.0.7", "@antv/l7-utils@^2.0.8":
+"@antv/l7-utils@2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@antv/l7-utils/-/l7-utils-2.3.1.tgz#f65d5371d735e5c5540dea98b38d60347e84e432"
+  integrity sha512-xOoLjr+h4TaW7hmfWekIAXiw5ZIWUHlKA266PjC4UALX6IEBTz0tdLED7NSlPFEyZ9wUcJEjtE+Zd+/f2HJHrQ==
+  dependencies:
+    "@babel/runtime" "^7.7.7"
+    "@turf/helpers" "^6.1.4"
+    d3-color "^1.4.0"
+
+"@antv/l7-utils@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-utils/download/@antv/l7-utils-2.0.8.tgz?cache=0&sync_timestamp=1579600800207&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-utils%2Fdownload%2F%40antv%2Fl7-utils-2.0.8.tgz#f6b362612f8ab5975b8e5125347c6b24322f15e8"
   integrity sha1-9rNiYS+KtZdbjlElNHxrJDIvFeg=
@@ -2298,6 +2314,11 @@ async@^2.6.2:
   integrity sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8=
   dependencies:
     lodash "^4.17.14"
+
+async@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
+  integrity sha512-TR2mEZFVOj2pLStYxLht7TyfuRzaydfpxr3k9RpHIzMgw7A64dzsdqCxH1WJyQdoe8T10nDXd9wnEigmiuHIZw==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -5456,9 +5477,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.npm.taobao.org/ini/download/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha1-7uJfVtscnsYIXgwid4CD9Zar+Sc=
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
+  integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
 inquirer@6.5.0:
   version "6.5.0"
