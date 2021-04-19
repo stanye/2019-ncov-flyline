@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@antv/async-hook@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@antv/async-hook/-/async-hook-2.1.0.tgz#17f57a6ae5e9c55adac3cdfac7d441258c3f9aeb"
+  integrity sha512-q7Rup5jTDAiWh77Xb2vgkCURJGczmU2iWTCkBDq28PuK5KUoenyeGGrFKAVkgqaL663wdpw0Vzn+sYriTfT9hA==
+  dependencies:
+    async "^3.1.1"
+
 "@antv/l7-component@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-component/download/@antv/l7-component-2.0.8.tgz?cache=0&sync_timestamp=1579600804992&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-component%2Fdownload%2F%40antv%2Fl7-component-2.0.8.tgz#a7ee26b9c81ee66b2d1aed5b146902901de90b26"
@@ -15,11 +22,12 @@
     load-styles "^2.0.0"
 
 "@antv/l7-core@^2.0.8":
-  version "2.0.7"
-  resolved "https://registry.npm.taobao.org/@antv/l7-core/download/@antv/l7-core-2.0.7.tgz#f9c938fe1ee9f4aa77ca7de23162e9c575171eab"
-  integrity sha1-+ck4/h7p9Kp3yn3iMWLpxXUXHqs=
+  version "2.3.9"
+  resolved "https://registry.yarnpkg.com/@antv/l7-core/-/l7-core-2.3.9.tgz#483f419a2def7bf5a951134474c620a338fa7216"
+  integrity sha512-z8rkjd5oMPtVFtB8k9hsYMcOhsaX4XkEdG7peQa1vJQKVH5FUote1fh3UyLyUvyrYVyYeh6CBbwDjdCvRZqvWA==
   dependencies:
-    "@antv/l7-utils" "^2.0.7"
+    "@antv/async-hook" "^2.1.0"
+    "@antv/l7-utils" "2.3.9"
     "@babel/runtime" "^7.7.7"
     "@mapbox/tiny-sdf" "^1.1.1"
     ajv "^6.10.2"
@@ -33,7 +41,6 @@
     merge-json-schemas "^1.0.0"
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
-    tapable "^2.0.0-beta.8"
     viewport-mercator-project "^6.2.1"
 
 "@antv/l7-layers@^2.0.8":
@@ -121,7 +128,16 @@
     supercluster "^6.0.2"
     tapable "^2.0.0-beta.8"
 
-"@antv/l7-utils@^2.0.7", "@antv/l7-utils@^2.0.8":
+"@antv/l7-utils@2.3.9":
+  version "2.3.9"
+  resolved "https://registry.yarnpkg.com/@antv/l7-utils/-/l7-utils-2.3.9.tgz#ef29e780469de105813ae3e2fbf8289a2ee39a51"
+  integrity sha512-BO2IvxSvLa6YrrKO6k9fBdBJmhSb5y262YHD0ky5Tv9jWEZoyXSC8F/aJxd3Kyo/oiYO0umL44CDZMp4D9SghQ==
+  dependencies:
+    "@babel/runtime" "^7.7.7"
+    "@turf/helpers" "^6.1.4"
+    d3-color "^1.4.0"
+
+"@antv/l7-utils@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-utils/download/@antv/l7-utils-2.0.8.tgz?cache=0&sync_timestamp=1579600800207&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-utils%2Fdownload%2F%40antv%2Fl7-utils-2.0.8.tgz#f6b362612f8ab5975b8e5125347c6b24322f15e8"
   integrity sha1-9rNiYS+KtZdbjlElNHxrJDIvFeg=
@@ -2298,6 +2314,11 @@ async@^2.6.2:
   integrity sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8=
   dependencies:
     lodash "^4.17.14"
+
+async@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
+  integrity sha512-TR2mEZFVOj2pLStYxLht7TyfuRzaydfpxr3k9RpHIzMgw7A64dzsdqCxH1WJyQdoe8T10nDXd9wnEigmiuHIZw==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -4591,9 +4612,9 @@ fb-watchman@^2.0.0:
     bser "2.1.1"
 
 figgy-pudding@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.npm.taobao.org/figgy-pudding/download/figgy-pudding-3.5.1.tgz#862470112901c727a0e495a80744bd5baa1d6790"
-  integrity sha1-hiRwESkBxyeg5JWoB0S9W6odZ5A=
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/figgy-pudding/-/figgy-pudding-3.5.2.tgz#b4eee8148abb01dcf1d1ac34367d59e12fa61d6e"
+  integrity sha512-0btnI/H8f2pavGMN8w40mlSKOfTK2SVJmBfBeVIj3kNw0swwgzyRq0d5TJVOwodFmtvpPeWPN/MCcfuWF0Ezbw==
 
 figures@^2.0.0:
   version "2.0.0"
@@ -9828,9 +9849,9 @@ sshpk@^1.7.0:
     tweetnacl "~0.14.0"
 
 ssri@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.npm.taobao.org/ssri/download/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
-  integrity sha1-KjxBso3UW2K2Nnbst0ABJlrp7dg=
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.2.tgz#157939134f20464e7301ddba3e90ffa8f7728ac5"
+  integrity sha512-cepbSq/neFK7xB6A50KHN0xHDotYzq58wWCa5LeWqnPrHG8GzfEjO/4O8kpmcGW+oaxkvhEJCWgbgNk4/ZV93Q==
   dependencies:
     figgy-pudding "^3.5.1"
 
