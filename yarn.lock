@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@antv/async-hook@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@antv/async-hook/-/async-hook-2.1.0.tgz#17f57a6ae5e9c55adac3cdfac7d441258c3f9aeb"
+  integrity sha512-q7Rup5jTDAiWh77Xb2vgkCURJGczmU2iWTCkBDq28PuK5KUoenyeGGrFKAVkgqaL663wdpw0Vzn+sYriTfT9hA==
+  dependencies:
+    async "^3.1.1"
+
 "@antv/l7-component@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-component/download/@antv/l7-component-2.0.8.tgz?cache=0&sync_timestamp=1579600804992&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-component%2Fdownload%2F%40antv%2Fl7-component-2.0.8.tgz#a7ee26b9c81ee66b2d1aed5b146902901de90b26"
@@ -15,11 +22,12 @@
     load-styles "^2.0.0"
 
 "@antv/l7-core@^2.0.8":
-  version "2.0.7"
-  resolved "https://registry.npm.taobao.org/@antv/l7-core/download/@antv/l7-core-2.0.7.tgz#f9c938fe1ee9f4aa77ca7de23162e9c575171eab"
-  integrity sha1-+ck4/h7p9Kp3yn3iMWLpxXUXHqs=
+  version "2.3.10"
+  resolved "https://registry.yarnpkg.com/@antv/l7-core/-/l7-core-2.3.10.tgz#215218b9fc0a9eb925ae164c103d221047ed18b3"
+  integrity sha512-ajW3cxFiYvOVChFv9Iwfk7CUhIR6hXv3TWRSNyr6dExL+YabwXXkvNadbhb+GVADUFDaDMCigMKG7SHNKsZ4Zg==
   dependencies:
-    "@antv/l7-utils" "^2.0.7"
+    "@antv/async-hook" "^2.1.0"
+    "@antv/l7-utils" "^2.3.10"
     "@babel/runtime" "^7.7.7"
     "@mapbox/tiny-sdf" "^1.1.1"
     ajv "^6.10.2"
@@ -33,7 +41,6 @@
     merge-json-schemas "^1.0.0"
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
-    tapable "^2.0.0-beta.8"
     viewport-mercator-project "^6.2.1"
 
 "@antv/l7-layers@^2.0.8":
@@ -121,13 +128,22 @@
     supercluster "^6.0.2"
     tapable "^2.0.0-beta.8"
 
-"@antv/l7-utils@^2.0.7", "@antv/l7-utils@^2.0.8":
+"@antv/l7-utils@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-utils/download/@antv/l7-utils-2.0.8.tgz?cache=0&sync_timestamp=1579600800207&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-utils%2Fdownload%2F%40antv%2Fl7-utils-2.0.8.tgz#f6b362612f8ab5975b8e5125347c6b24322f15e8"
   integrity sha1-9rNiYS+KtZdbjlElNHxrJDIvFeg=
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@turf/helpers" "^6.1.4"
+
+"@antv/l7-utils@^2.3.10":
+  version "2.3.10"
+  resolved "https://registry.yarnpkg.com/@antv/l7-utils/-/l7-utils-2.3.10.tgz#66afcbab095abb1192b343af6807e23694db83c1"
+  integrity sha512-r2Tg3wzLeMclhqPn/RCX8BzF11peIeE0v6oIXZEPnloEgYOmC3WdQ+qF4ta7FBC99zilF85KK8vxGdWuZYSQiA==
+  dependencies:
+    "@babel/runtime" "^7.7.7"
+    "@turf/helpers" "^6.1.4"
+    d3-color "^1.4.0"
 
 "@antv/l7@^2.0.8":
   version "2.0.8"
@@ -2298,6 +2314,11 @@ async@^2.6.2:
   integrity sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8=
   dependencies:
     lodash "^4.17.14"
+
+async@^3.1.1:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.0.tgz#b3a2685c5ebb641d3de02d161002c60fc9f85720"
+  integrity sha512-TR2mEZFVOj2pLStYxLht7TyfuRzaydfpxr3k9RpHIzMgw7A64dzsdqCxH1WJyQdoe8T10nDXd9wnEigmiuHIZw==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -5170,9 +5191,9 @@ hmac-drbg@^1.0.0:
     minimalistic-crypto-utils "^1.0.1"
 
 hosted-git-info@^2.1.4:
-  version "2.8.5"
-  resolved "https://registry.npm.taobao.org/hosted-git-info/download/hosted-git-info-2.8.5.tgz?cache=0&sync_timestamp=1570493570687&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhosted-git-info%2Fdownload%2Fhosted-git-info-2.8.5.tgz#759cfcf2c4d156ade59b0b2dfabddc42a6b9c70c"
-  integrity sha1-dZz88sTRVq3lmwst+r3cQqa5xww=
+  version "2.8.9"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-2.8.9.tgz#dffc0bf9a21c02209090f2aa69429e1414daf3f9"
+  integrity sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
 
 hpack.js@^2.1.6:
   version "2.1.6"
