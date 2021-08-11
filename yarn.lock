@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@antv/async-hook@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@antv/async-hook/-/async-hook-2.1.0.tgz#17f57a6ae5e9c55adac3cdfac7d441258c3f9aeb"
+  integrity sha512-q7Rup5jTDAiWh77Xb2vgkCURJGczmU2iWTCkBDq28PuK5KUoenyeGGrFKAVkgqaL663wdpw0Vzn+sYriTfT9hA==
+  dependencies:
+    async "^3.1.1"
+
 "@antv/l7-component@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-component/download/@antv/l7-component-2.0.8.tgz?cache=0&sync_timestamp=1579600804992&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-component%2Fdownload%2F%40antv%2Fl7-component-2.0.8.tgz#a7ee26b9c81ee66b2d1aed5b146902901de90b26"
@@ -15,11 +22,12 @@
     load-styles "^2.0.0"
 
 "@antv/l7-core@^2.0.8":
-  version "2.0.7"
-  resolved "https://registry.npm.taobao.org/@antv/l7-core/download/@antv/l7-core-2.0.7.tgz#f9c938fe1ee9f4aa77ca7de23162e9c575171eab"
-  integrity sha1-+ck4/h7p9Kp3yn3iMWLpxXUXHqs=
+  version "2.5.8"
+  resolved "https://registry.yarnpkg.com/@antv/l7-core/-/l7-core-2.5.8.tgz#7f7fa1307f76f20d070d2377b05a01a3a008dd4c"
+  integrity sha512-kcr5Ycz0RLl0fCvuGxlR6sVe55YNbuiYjQ8isJm579Yfu56eqvhQ8ld7orvjdPdr8hTWeNkyyY4/SE76b5gB8w==
   dependencies:
-    "@antv/l7-utils" "^2.0.7"
+    "@antv/async-hook" "^2.1.0"
+    "@antv/l7-utils" "^2.5.8"
     "@babel/runtime" "^7.7.7"
     "@mapbox/tiny-sdf" "^1.1.1"
     ajv "^6.10.2"
@@ -30,10 +38,8 @@
     inversify "^5.0.1"
     inversify-inject-decorators "^3.1.0"
     lodash "^4.17.15"
-    merge-json-schemas "^1.0.0"
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
-    tapable "^2.0.0-beta.8"
     viewport-mercator-project "^6.2.1"
 
 "@antv/l7-layers@^2.0.8":
@@ -121,13 +127,22 @@
     supercluster "^6.0.2"
     tapable "^2.0.0-beta.8"
 
-"@antv/l7-utils@^2.0.7", "@antv/l7-utils@^2.0.8":
+"@antv/l7-utils@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-utils/download/@antv/l7-utils-2.0.8.tgz?cache=0&sync_timestamp=1579600800207&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-utils%2Fdownload%2F%40antv%2Fl7-utils-2.0.8.tgz#f6b362612f8ab5975b8e5125347c6b24322f15e8"
   integrity sha1-9rNiYS+KtZdbjlElNHxrJDIvFeg=
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@turf/helpers" "^6.1.4"
+
+"@antv/l7-utils@^2.5.8":
+  version "2.5.8"
+  resolved "https://registry.yarnpkg.com/@antv/l7-utils/-/l7-utils-2.5.8.tgz#06901a28f9fb96aabaf78e4ac37596eb00f6ab28"
+  integrity sha512-d37PaBYZsMdj3jXPAQYmYze0n0bQsPReJpuJT4sYN5Fpv9oh8eOVbcqWYfzT9PGzcZ3jX3pKETCQ/f6ydbL5AQ==
+  dependencies:
+    "@babel/runtime" "^7.7.7"
+    "@turf/helpers" "^6.1.4"
+    d3-color "^1.4.0"
 
 "@antv/l7@^2.0.8":
   version "2.0.8"
@@ -2298,6 +2313,11 @@ async@^2.6.2:
   integrity sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8=
   dependencies:
     lodash "^4.17.14"
+
+async@^3.1.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.1.tgz#d3274ec66d107a47476a4c49136aacdb00665fc8"
+  integrity sha512-XdD5lRO/87udXCMC9meWdYiR+Nq6ZjUfXidViUZGu2F1MO4T3XwZ1et0hb2++BgLfhyJwy44BGB/yx80ABx8hg==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -6851,7 +6871,7 @@ merge-descriptors@1.0.1:
   resolved "https://registry.npm.taobao.org/merge-descriptors/download/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
   integrity sha1-sAqqVW3YtEVoFQ7J0blT8/kMu2E=
 
-merge-json-schemas@1.0.0, merge-json-schemas@^1.0.0:
+merge-json-schemas@1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/merge-json-schemas/download/merge-json-schemas-1.0.0.tgz#2d635eaa8401c5fa3d03f30f89349fc7cafee62f"
   integrity sha1-LWNeqoQBxfo9A/MPiTSfx8r+5i8=
@@ -7720,9 +7740,9 @@ path-key@^2.0.0, path-key@^2.0.1:
   integrity sha1-QRyttXTFoUDTpLGRDUDYDMn0C0A=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 path-to-regexp@0.1.7:
   version "0.1.7"
