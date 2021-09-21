@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@antv/async-hook@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@antv/async-hook/-/async-hook-2.1.0.tgz#17f57a6ae5e9c55adac3cdfac7d441258c3f9aeb"
+  integrity sha512-q7Rup5jTDAiWh77Xb2vgkCURJGczmU2iWTCkBDq28PuK5KUoenyeGGrFKAVkgqaL663wdpw0Vzn+sYriTfT9hA==
+  dependencies:
+    async "^3.1.1"
+
 "@antv/l7-component@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-component/download/@antv/l7-component-2.0.8.tgz?cache=0&sync_timestamp=1579600804992&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-component%2Fdownload%2F%40antv%2Fl7-component-2.0.8.tgz#a7ee26b9c81ee66b2d1aed5b146902901de90b26"
@@ -15,11 +22,12 @@
     load-styles "^2.0.0"
 
 "@antv/l7-core@^2.0.8":
-  version "2.0.7"
-  resolved "https://registry.npm.taobao.org/@antv/l7-core/download/@antv/l7-core-2.0.7.tgz#f9c938fe1ee9f4aa77ca7de23162e9c575171eab"
-  integrity sha1-+ck4/h7p9Kp3yn3iMWLpxXUXHqs=
+  version "2.5.23"
+  resolved "https://registry.yarnpkg.com/@antv/l7-core/-/l7-core-2.5.23.tgz#66f7152374a7b49743e59ef0a522dbace51d558b"
+  integrity sha512-74pJdAHhedEOkRCDRpv8M/oL2GKCcURiuR70lQFrRRkNkGaTGQUjySST8EUKU04II4wk079z9cdcBgu1QGnd9Q==
   dependencies:
-    "@antv/l7-utils" "^2.0.7"
+    "@antv/async-hook" "^2.1.0"
+    "@antv/l7-utils" "^2.5.23"
     "@babel/runtime" "^7.7.7"
     "@mapbox/tiny-sdf" "^1.1.1"
     ajv "^6.10.2"
@@ -30,10 +38,8 @@
     inversify "^5.0.1"
     inversify-inject-decorators "^3.1.0"
     lodash "^4.17.15"
-    merge-json-schemas "^1.0.0"
     probe.gl "^3.1.1"
     reflect-metadata "^0.1.13"
-    tapable "^2.0.0-beta.8"
     viewport-mercator-project "^6.2.1"
 
 "@antv/l7-layers@^2.0.8":
@@ -121,13 +127,22 @@
     supercluster "^6.0.2"
     tapable "^2.0.0-beta.8"
 
-"@antv/l7-utils@^2.0.7", "@antv/l7-utils@^2.0.8":
+"@antv/l7-utils@^2.0.8":
   version "2.0.8"
   resolved "https://registry.npm.taobao.org/@antv/l7-utils/download/@antv/l7-utils-2.0.8.tgz?cache=0&sync_timestamp=1579600800207&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40antv%2Fl7-utils%2Fdownload%2F%40antv%2Fl7-utils-2.0.8.tgz#f6b362612f8ab5975b8e5125347c6b24322f15e8"
   integrity sha1-9rNiYS+KtZdbjlElNHxrJDIvFeg=
   dependencies:
     "@babel/runtime" "^7.7.7"
     "@turf/helpers" "^6.1.4"
+
+"@antv/l7-utils@^2.5.23":
+  version "2.5.23"
+  resolved "https://registry.yarnpkg.com/@antv/l7-utils/-/l7-utils-2.5.23.tgz#e7240fc99982f2e39751e7967030ee3c4e109c24"
+  integrity sha512-DvmCrGRftyn+dxNoDMvNApLiHMOpAr6hNIGLkOkVATC6Wehpaed3/nOrZjQWRbApUjw45Mw61Xg068yUGDpIRQ==
+  dependencies:
+    "@babel/runtime" "^7.7.7"
+    "@turf/helpers" "^6.1.4"
+    d3-color "^1.4.0"
 
 "@antv/l7@^2.0.8":
   version "2.0.8"
@@ -2298,6 +2313,11 @@ async@^2.6.2:
   integrity sha1-1yYl4jRKNlbjo61Pp0n6gymdgv8=
   dependencies:
     lodash "^4.17.14"
+
+async@^3.1.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/async/-/async-3.2.1.tgz#d3274ec66d107a47476a4c49136aacdb00665fc8"
+  integrity sha512-XdD5lRO/87udXCMC9meWdYiR+Nq6ZjUfXidViUZGu2F1MO4T3XwZ1et0hb2++BgLfhyJwy44BGB/yx80ABx8hg==
 
 asynckit@^0.4.0:
   version "0.4.0"
@@ -6851,7 +6871,7 @@ merge-descriptors@1.0.1:
   resolved "https://registry.npm.taobao.org/merge-descriptors/download/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
   integrity sha1-sAqqVW3YtEVoFQ7J0blT8/kMu2E=
 
-merge-json-schemas@1.0.0, merge-json-schemas@^1.0.0:
+merge-json-schemas@1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/merge-json-schemas/download/merge-json-schemas-1.0.0.tgz#2d635eaa8401c5fa3d03f30f89349fc7cafee62f"
   integrity sha1-LWNeqoQBxfo9A/MPiTSfx8r+5i8=
@@ -10255,9 +10275,9 @@ tmp@^0.0.33:
     os-tmpdir "~1.0.2"
 
 tmpl@1.0.x:
-  version "1.0.4"
-  resolved "https://registry.npm.taobao.org/tmpl/download/tmpl-1.0.4.tgz#23640dd7b42d00433911140820e5cf440e521dd1"
-  integrity sha1-I2QN17QtAEM5ERQIIOXPRA5SHdE=
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/tmpl/-/tmpl-1.0.5.tgz#8683e0b902bb9c20c4f726e3c0b69f36518c07cc"
+  integrity sha512-3f0uOEAQwIqGuWW2MVzYg8fV/QNnc/IpuJNG837rLuczAaLVHslWHZQj4IGiEl5Hs3kkbhwL9Ab7Hrsmuj+Smw==
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"
